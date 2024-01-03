@@ -1,0 +1,129 @@
+:root {
+  --clr-primary-100: hsl(1, 90%, 64%);
+  --clr-primary-200: hsl(219, 85%, 26%);
+  --clr-neutral-800: hsl(224, 21%, 14%);
+  --clr-neutral-600: hsl(219, 12%, 42%);
+  --clr-neutral-500: hsl(219, 14%, 63%);
+  --clr-neutral-400: hsl(205, 33%, 90%);
+  --clr-neutral-300: hsl(211, 68%, 94%);
+  --clr-neutral-200: hsl(210, 60%, 98%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --fs-base: 16px;
+
+  --font-family: "Plus Jakarta Sans", sans-serif;
+
+  --fw-regular: 500;
+  --fw-bolder: 800;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background: var(--clr-neutral-300);
+  color: var(--clr-neutral-500);
+  font-weight: var(--fw-regular);
+  font-family: var(--font-family);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+main {
+  width: 60%;
+  margin: 2rem auto;
+  border-radius: 0.25rem;
+  background: var(--clr-neutral-100);
+  padding: 2em;
+  color: var(--clr-neutral-600);
+}
+
+.notification__action {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.notification__title {
+  color: var(--clr-neutral-800);
+}
+
+.notification__title span {
+  background: var(--clr-primary-200);
+  color: var(--clr-neutral-100);
+  padding: 0.125em 0.5em;
+  border-radius: 0.5rem;
+}
+
+.notification {
+  display: flex;
+  align-items: start;
+  gap: 1em;
+  position: relative;
+  border-radius: 0.25rem;
+  padding: 1em;
+  margin-block: 1rem;
+}
+
+.notification-unread {
+  background: var(--clr-neutral-200);
+}
+
+.notification-unread__icon {
+  display: inline-block;
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--clr-primary-100);
+}
+
+.notification__right-side {
+}
+
+.notification__left-side {
+  max-width: 3.5rem;
+}
+
+.notification__profile-picture {
+  width: 100%;
+}
+
+.notification-username {
+  font-weight: var(--fw-bolder);
+  color: var(--clr-neutral-800);
+}
+
+.notification-post__title {
+  font-weight: var(--fw-bolder);
+}
+
+.notification-club {
+  color: var(--clr-primary-200);
+  font-weight: var(--fw-bolder);
+}
+
+.notification__msg {
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: 0.25rem;
+  padding: 1.5em;
+  margin-top: 1em;
+}
+
+.notification__text-image {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height: 3.5rem;
+}
