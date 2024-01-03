@@ -5,10 +5,10 @@ const unreadNotifications = Array.from(
 );
 let notifications = parseInt(notificationNumber.textContent);
 
-console.log(notifications);
 // read all notifications
 markLink.addEventListener("click", () => {
-  notificationNumber.innerText = "0";
+  notifications = 0;
+  notificationNumber.innerText = notifications;
 
   unreadNotifications.map((notification, index) => {
     document.getElementsByClassName("notification-unread__icon")[

@@ -42,12 +42,36 @@ body {
 }
 
 main {
-  width: 60%;
+  width: 90%;
   margin: 2rem auto;
   border-radius: 0.25rem;
   background: var(--clr-neutral-100);
   padding: 2em;
   color: var(--clr-neutral-600);
+}
+
+@media (width > 490px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media (width > 770px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media (width > 1023px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media (width > 1200px) {
+  main {
+    width: 50%;
+  }
 }
 
 .notification__action {
